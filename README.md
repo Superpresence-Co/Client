@@ -1,23 +1,23 @@
 # Client
 
-Kode final (script & style) untuk website Webflow klien Superpresence.
-Satu folder = satu klien. Isinya hanya `script.js` dan `style.css`.
+Final code (script & style) for Superpresence clients' Webflow websites.
+One folder = one client. Each folder contains only `script.js` and `style.css`.
 
-Uji coba dilakukan di CodeSandbox. Kode baru masuk ke sini setelah dikirim ke klien.
+Testing happens in CodeSandbox. Code is added here only after it has been delivered to the client.
 
-> ⚠️ Repo ini **public**. Jangan simpan password, API key, atau catatan internal di sini.
+> ⚠️ This repo is **public**. Never store passwords, API keys, or internal notes here.
 
-## Daftar klien & kode embed Webflow
-Tempel di Webflow → Site settings → Custom code.
+## Clients & Webflow embed code
+Paste in Webflow → Site settings → Custom code.
 
 ### Superpresence V2.5
 Folder: `superpresence-v2.5/`
 
-Tempel di **Head**:
+Paste in **Head**:
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Superpresence-Co/Client@superpresence-v2.5-v1.0.0/superpresence-v2.5/style.css">
 ```
-Tempel sebelum **</body>**:
+Paste before **</body>**:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/Superpresence-Co/Client@superpresence-v2.5-v1.0.0/superpresence-v2.5/script.js" defer></script>
 ```
@@ -25,22 +25,22 @@ Tempel sebelum **</body>**:
 ### Onelisted V2
 Folder: `onelisted-v2/`
 
-Tempel di **Head**:
+Paste in **Head**:
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Superpresence-Co/Client@onelisted-v2-v1.0.0/onelisted-v2/style.css">
 ```
-Tempel sebelum **</body>**:
+Paste before **</body>**:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/Superpresence-Co/Client@onelisted-v2-v1.0.0/onelisted-v2/script.js" defer></script>
 ```
 
-## Cara update kode klien
-1. Ganti isi `script.js` / `style.css` di folder klien.
+## Updating a client's code
+1. Update `script.js` / `style.css` in the client's folder.
 2. Commit & push.
-3. Buat versi baru, contoh: `git tag onelisted-v2-v1.0.1 && git push --tags`
-4. Di Webflow, ganti `v1.0.0` di link embed menjadi versi baru.
+3. Create a new version, e.g. `git tag onelisted-v2-v1.0.1 && git push --tags`
+4. In Webflow, change `v1.0.0` in the embed links to the new version.
 
-Selalu pakai nomor versi di link. Jangan pakai `@main`: perubahan bisa telat muncul (cache sampai 12 jam) dan langsung tayang tanpa dicek.
+Always use a version number in the links. Don't use `@main`: changes can show up late (cached for up to 12 hours) and go live without review.
 
-## Menambah klien baru
-Buat folder baru dengan huruf kecil dan tanda `-` (contoh: `nama-klien-v1`), isi `script.js` dan `style.css`, lalu tambahkan kode embed-nya di README ini.
+## Adding a new client
+Create a new folder using lowercase letters and `-` (e.g. `client-name-v1`), add `script.js` and `style.css`, then add its embed code to this README.
