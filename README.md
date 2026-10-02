@@ -1,9 +1,16 @@
 # cdn (public)
 
-Production assets for Superpresence Webflow projects, served via jsDelivr.
-Source lives in the private `Superpresence-Co/Clients` repo.
+Production code for Superpresence client Webflow projects, served via jsDelivr.
+One folder per client. Only code delivered to the client lives here; prototyping happens in CodeSandbox.
 
-**Public repo — NEVER commit secrets.**
+**Public repo: NEVER commit API keys/tokens, and no internal notes or links (keep those in internal docs).**
+
+| Folder | Project |
+|---|---|
+| `superpresence-v2.5/` | Superpresence V2.5 |
+| `onelisted-v2/` | Onelisted V2 |
+
+Folder names: lowercase, kebab-case. Each client folder has `script.js`, `style.css`, and a README with the Webflow embed code + changelog.
 
 ## URL format
 ```
